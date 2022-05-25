@@ -1,0 +1,2 @@
+username = "mangesh"
+password = "mysqlpassword"

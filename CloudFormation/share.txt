@@ -1,0 +1,163 @@
+AKIAVHSB4WCPNBHO6PGX
+
+wiTMKg5d7aGVP1YC8d5N3nUsz6CiLuVqeUVwp4CH
+
+Amadeus
+
+
+AKIAVHSB4WCPIAAAUFWY
+A4HBgMFm93U8azyNLz3653LRkPk9lKAT1mub+QQB
+
+
+https://359841706142.signin.aws.amazon.com/console
+
+Teams Links:
+
+teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_N2ZlMGZjODgtZTU1Yi00YWJkLWJiZDMtZWM4YTMyMDcxZDNk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%252282dbe1f8-d974-497c-98f4-d841e0533ccc%2522%252c%2522Oid%2522%253a%25225c4c3255-983b-459b-9d25-a0886884dd89%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=06488547-4e08-4615-8ec3-4a732c644577&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true
+
+
+
+
+AKIAVHSB4WCPLJ7D44TF 
+abDm+aWVO5ChT8AOjeXjRkW0qMDO2zfjPu8dxlVo
+
+
+
+SELECT User, Host FROM mysql.user WHERE Host <> 'localhost';
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
+
+ mysql -h 35.154.17.254 -u root -P 3306 -p
+
+ CREATE TABLE BooksTBL (
+     BookID INT,
+     BookName VARCHAR(100) NOT NULL,
+     AuthorID INT NOT NULL,
+     BookPrice DECIMAL(6,2) NOT NULL,
+     BookLastUpdated TIMESTAMP,
+     BookIsAvailable BOOLEAN
+     );
+
+
+INSERT INTO BooksTBL (BookName, AuthorID, BookPrice, BookIsAvailable)
+     VALUES ('And Then There Were None', 1, 14.95, 1),
+     ('The Man in the Brown Suit', 1, 23.99, 1),
+     ('The Stand', 2, 35.99, 1),
+     ('Pet Sematary', 2, 17.95, 0),
+     ('The Green Mile', 2, 29.99, 1),
+     ('The Alchemist', 3, 25, 1),
+     ('By the River Piedra I Sat Down and Wept', 3, 18.95, 0);
+
+ap-southeast-1
+
+https://docs.aws.amazon.com/mgn/latest/ug/linux-agent.html
+
+wget -O ./aws-replication-installer-init.py https://aws-application-migration-service-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/latest/linux/aws-replication-installer-init.py
+
+
+IAM user
+test 
+AWSapplicationmigrationagentpolicy
+
+AKIAVHSB4WCPK26J3IVI
+IeZvV+7yii9V9DnGIWPmFUqwGvj3+gZ+M/GZa14Z
+
+https://github.com/prydonius/mariadb-broker
+
+
+
+
+
+Setting up the Kubernetes environment on 2 nodes. (Hardware will be supplied by customer)
+4 Hours of demonstration of implemented infrastructure and the Kubernetes technology.
+24 hours of engagement for further support to customer.
+
+
+Setting up the Kubernetes Cluster : 
+
+
+52.221.243.196
+
+
+
+https://towardsdatascience.com/aws-application-migration-service-architecture-explained-2947348ef194
+
+
+Stripedata Pvt. Ltd 
+7-145 New Nagendra Nagar Colony 
+Habsiguda, Hyderabad (Telangana)–500007
+
+-------------------------------------------------------------------------------------------
+
+AKIAVHSB4WCPJYS36NUP
+Sa0bUnqOGY71ubfe+vHGIClpTyFSpRoRNcTEftfM
+
+
+1.install git package
+yum install git-all
+
+2.Clone Easy RSA Git Repo
+git clone https://github.com/OpenVPN/easy-rsa.git
+
+cd easy-rsa/easyrsa3
+
+3.Initialize Public Key Infrastructure (PKI)
+./easyrsa init-pki
+
+4. Build Certificate Authority
+./easyrsa build-ca nopass
+
+5. Build Server Certificate
+./easyrsa build-server-full clientvpndemo.com nopass
+
+6. Build Client Certificate
+./easyrsa build-client-full pdomala.clientvpndemo.com nopass
+
+mkdir acm
+
+cp pki/ca.crt acm
+cp pki/issued/clientvpndemo.com.crt acm
+cp pki/issued/pdomala.clientvpndemo.com.crt acm
+cp pki/private/clientvpndemo.com.key acm
+cp pki/private/pdomala.clientvpndemo.com.key acm
+cd acm
+
+aws configure ( Provide access key and secret key)
+
+7. Mention the correct Region code in below command:
+
+aws acm import-certificate --certificate fileb://clientvpndemo.com.crt --private-key fileb://clientvpndemo.com.key --certificate-chain fileb://ca.crt --region  ap-south-1
+aws acm import-certificate --certificate fileb://pdomala.clientvpndemo.com.crt --private-key fileb://pdomala.clientvpndemo.com.key --certificate-chain fileb://ca.crt --region ap-south-1
+
+
+
+
+
+
+https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/?extIdCarryOver=true&sc_cid=701f2000001OH7TAAW
+
+
+
++971552413480 dubailand
+0542534391 dubai marina
+0501927293 JLT
++971522352637 JVC
++971585877907 -UAE
++971563751910 -AL NABBA SHARJAH
+
+https://stackoverflow.com/questions/1117398/java-home-directory-in-linux
+
+
+
+Corei7 Processor
+16GB RAM
+500Gb HDD
+
+
+
+
+
+
+
+
+curl –sL https://rpm.nodesource.com/setup_14.x | sudo bash -

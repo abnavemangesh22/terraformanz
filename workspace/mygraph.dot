@@ -1,0 +1,30 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] google_compute_address.myipaddress (expand)" [label = "google_compute_address.myipaddress", shape = "box"]
+		"[root] google_compute_firewall.myfirewall (expand)" [label = "google_compute_firewall.myfirewall", shape = "box"]
+		"[root] google_compute_instance.mywebserver-1 (expand)" [label = "google_compute_instance.mywebserver-1", shape = "box"]
+		"[root] google_compute_network.mynetwork (expand)" [label = "google_compute_network.mynetwork", shape = "box"]
+		"[root] google_compute_subnetwork.mysubnet-1 (expand)" [label = "google_compute_subnetwork.mysubnet-1", shape = "box"]
+		"[root] output.myipout" [label = "output.myipout", shape = "note"]
+		"[root] output.myoutput" [label = "output.myoutput", shape = "note"]
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"]" [label = "provider[\"registry.terraform.io/hashicorp/google\"]", shape = "diamond"]
+		"[root] var.ssh_public_key" [label = "var.ssh_public_key", shape = "note"]
+		"[root] google_compute_address.myipaddress (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/google\"]"
+		"[root] google_compute_firewall.myfirewall (expand)" -> "[root] google_compute_network.mynetwork (expand)"
+		"[root] google_compute_instance.mywebserver-1 (expand)" -> "[root] google_compute_address.myipaddress (expand)"
+		"[root] google_compute_instance.mywebserver-1 (expand)" -> "[root] google_compute_subnetwork.mysubnet-1 (expand)"
+		"[root] google_compute_instance.mywebserver-1 (expand)" -> "[root] var.ssh_public_key"
+		"[root] google_compute_network.mynetwork (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/google\"]"
+		"[root] google_compute_subnetwork.mysubnet-1 (expand)" -> "[root] google_compute_network.mynetwork (expand)"
+		"[root] output.myipout" -> "[root] google_compute_address.myipaddress (expand)"
+		"[root] output.myoutput" -> "[root] google_compute_instance.mywebserver-1 (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"] (close)" -> "[root] google_compute_firewall.myfirewall (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"] (close)" -> "[root] google_compute_instance.mywebserver-1 (expand)"
+		"[root] root" -> "[root] output.myipout"
+		"[root] root" -> "[root] output.myoutput"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/google\"] (close)"
+	}
+}
+

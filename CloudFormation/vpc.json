@@ -1,0 +1,33 @@
+
+
+{
+"Description": "create the vpc",
+"Resources":{
+    "ProdVPC": {
+        "Type": "AWS::EC2::VPC",
+        "Properties": {
+           "CidrBlock": "192.168.200.0/24"
+        }
+},
+"web":{
+    "Type": "AWS::EC2::Subnet",
+    "Properties":{
+        "CidrBlock": "192.168.200.0/24",
+        "VpcId": {
+          "Ref": "ProdVPC"
+        }
+    }
+},
+"webserver":{
+    "Type":"AWS::EC2::Instance",
+    "Properties":{
+        "InstanceType": "t2.micro",
+        "KeyName": "Windowskey",
+        "ImageId": "ami-079b5e5b3971bd10d",
+        "SubnetId": {
+            "Ref": "web"
+        }
+    }
+}
+}
+}

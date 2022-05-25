@@ -1,0 +1,16 @@
+
+
+{
+"Resouces": {
+    "MyFirstEC2Instance": {
+        "Type": "AWS::EC2::Instance",
+        "Properties":{
+            "ImageId": "ami-079b5e5b3971bd10d",
+            "InstanceType": "t2.micro",
+            "KeyName": "Windowskey",
+            "AvailabilityZone": "ap-south-1",
+            "SubnetId": "subnet-79daf611"
+        }
+    }
+}
+}
